@@ -95,33 +95,3 @@ function filtrarPlantas() {
 
 mostrarPlantas();
 
-.controles {
-  display: grid;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-
-.controles input,
-.controles select {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid var(--borda);
-  border-radius: 8px;
-  font: inherit;
-  background: white;
-}
-
-.controles input:focus,
-.controles select:focus {
-  outline: 2px solid var(--verde);
-  outline-offset: 2px;
-}
-
-.planta p {
-  overflow-wrap: anywhere;
-}
-
-[hidden] {
-  display: none !important;
-}
-
