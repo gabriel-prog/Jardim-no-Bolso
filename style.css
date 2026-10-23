@@ -94,3 +94,21 @@ footer {
     padding: 18px;
   }
 }
+
+.lista-plantas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.planta {
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  padding: 16px;
+  background: var(--verde-claro);
+}
+
+.planta h3 {
+  margin-top: 0;
+  color: var(--verde-escuro);
+}
