@@ -1,0 +1,96 @@
+
+/* 1. Configurações gerais */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --verde-escuro: #1f5135;
+  --verde: #36794f;
+  --verde-claro: #e8f3e9;
+  --fundo: #f4f7f4;
+  --texto: #243328;
+  --branco: #ffffff;
+  --borda: #dce5dd;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* 2. Cabeçalho */
+.cabecalho {
+  background-color: var(--verde-escuro);
+  color: var(--branco);
+  padding: 28px 20px;
+  text-align: center;
+}
+
+.cabecalho h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.cabecalho p {
+  margin: 8px 0 0;
+  color: #e0eee3;
+}
+
+/* 3. Conteúdo principal */
+.container {
+  width: min(100% - 32px, 1000px);
+  margin: 32px auto;
+}
+
+section {
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 12px rgb(20 50 30 / 5%);
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--verde-escuro);
+  font-size: 1.25rem;
+}
+
+/* 4. Destaque dos números */
+.resumo strong {
+  color: var(--verde);
+  font-size: 1.1rem;
+}
+
+/* 5. Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #5b6b5e;
+  font-size: 0.9rem;
+}
+
+/* 6. Ajustes para celulares */
+@media (max-width: 600px) {
+  .cabecalho {
+    padding: 22px 16px;
+  }
+
+  .cabecalho h1 {
+    font-size: 1.6rem;
+  }
+
+  .container {
+    width: calc(100% - 24px);
+    margin: 20px auto;
+  }
+
+  section {
+    padding: 18px;
+  }
+}
